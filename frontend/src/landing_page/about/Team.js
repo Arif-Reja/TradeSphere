@@ -12,10 +12,11 @@ function Team() {
         style={{ lineHeight: "1.8", fontSize: "1.2em" }}
       >
         <div className="col-6 p-3 text-center">
-          <img
-            src="media/images/nithinKamath.jpg"
-            style={{ borderRadius: "100%", width: "50%" }}
-          />
+         <img
+  src="media/images/nithinKamath.jpg"
+  alt="Nithin Kamath, founder of Zerodha"
+  style={{ borderRadius: "100%", width: "50%" }}
+/>
           <h4 className="mt-5">Nithin Kamath</h4>
           <h6>Founder, CEO</h6>
         </div>
