@@ -19,6 +19,30 @@ const uri = process.env.MONGO_URL;
 
 app.use(cors());
 app.use(express.json());
+// Connect to MongoDB when a serverless request arrives
+app.use(async (req, res, next) => {
+  try {
+    if (!uri) {
+      return res.status(500).json({
+        message: "MONGO_URL is not configured.",
+      });
+    }
+
+    if (mongoose.connection.readyState !== 1) {
+      await mongoose.connect(uri, {
+        serverSelectionTimeoutMS: 10000,
+      });
+    }
+
+    next();
+  } catch (error) {
+    console.error("MongoDB connection failed:", error.message);
+
+    return res.status(503).json({
+      message: "Database connection unavailable.",
+    });
+  }
+});
 
 // ---------------- SignUp ----------------
 app.post("/auth/signup", async (req, res) => {
@@ -351,28 +375,12 @@ app.post("/newOrder", authenticateToken, async (req, res) => {
 });
 
 
-// ---------------- Run server ----------------
-async function startServer() {
-  try {
-    if (!uri) {
-      throw new Error("MONGO_URL is missing from the .env file.");
-    }
+// ---------------- Health Check ----------------
+app.get("/", (req, res) => {
+  res.status(200).json({
+    message: "TradeSphere backend is running!",
+  });
+});
 
-    if (!process.env.JWT_SECRET) {
-      throw new Error("JWT_SECRET is missing from the .env file.");
-    }
-
-    await mongoose.connect(uri);
-
-    console.log("MongoDB connected successfully.");
-
-    app.listen(PORT, () => {
-      console.log(`Backend running at http://localhost:${PORT}`);
-    });
-  } catch (error) {
-    console.error("Server startup failed:", error.message);
-    process.exit(1);
-  }
-}
-
-startServer();
+// ---------------- Export App for Vercel ----------------
+module.exports = app;
