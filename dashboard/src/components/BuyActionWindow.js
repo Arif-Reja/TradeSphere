@@ -32,7 +32,7 @@ const BuyActionWindow = ({ uid }) => {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:3002/newOrder",
+        "https://trade-sphere-gwxh.vercel.app/newOrder",
         {
           name: uid,
           qty,

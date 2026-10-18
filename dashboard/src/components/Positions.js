@@ -18,7 +18,7 @@ const Positions = () => {
         }
 
         const response = await axios.get(
-          "http://localhost:3002/allPositions",
+          "https://trade-sphere-gwxh.vercel.app/allPositions",
           {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -22,7 +22,7 @@ function Signup() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3002/auth/signup",
+        "https://trade-sphere-gwxh.vercel.app/auth/signup",
         {
           fullName,
           email,

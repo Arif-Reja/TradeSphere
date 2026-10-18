@@ -16,7 +16,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3002/auth/login",
+        "https://trade-sphere-gwxh.vercel.app/auth/login",
         { email, password }
       );
 
@@ -30,7 +30,7 @@ function Login() {
 
      
       window.location.href =
-        `http://localhost:3001/?token=${encodeURIComponent(token)}&user=${encodeURIComponent(
+        `https://trade-sphere-13d5.vercel.app/?token=${encodeURIComponent(token)}&user=${encodeURIComponent(
           JSON.stringify(user || {})
         )}`;
     } catch (err) {
