@@ -20,67 +20,62 @@ function Footer() {
           </div>
 
           {/* Company */}
-          <div className="col">
-            <p>Company</p>
+          {/* Company */}
+<div className="col">
+  <p>Company</p>
 
-            <Link to="/about">About</Link>
-            <br />
+  <a href="https://zerodha.com/about/">About</a>
+  <br />
 
-            <Link to="/product">Products</Link>
-            <br />
+  <a href="https://zerodha.com/referral/">Referral programme</a>
+  <br />
 
-            <Link to="/pricing">Pricing</Link>
-            <br />
+  <a href="https://zerodha.com/careers/">Careers</a>
+  <br />
 
-            <a href="">Referral programme</a>
-            <br />
+  <a href="https://zerodha.tech/">Zerodha.tech</a>
+  <br />
 
-            <a href="">Careers</a>
-            <br />
+  <a href="https://zerodha.com/media/">Press &amp; media</a>
+  <br />
 
-            <a href="">Zerodha.tech</a>
-            <br />
+  <a href="https://zerodha.com/z-connect/">Zerodha cares (CSR)</a>
+  <br />
+</div>
 
-            <a href="">Press & media</a>
-            <br />
+{/* Support */}
+<div className="col">
+  <p>Support</p>
 
-            <a href="">Zerodha cares (CSR)</a>
-            <br />
-          </div>
+  <Link to="/support">Contact</Link>
+  <br />
 
-          {/* Support */}
-          <div className="col">
-            <p>Support</p>
+  <a href="https://support.zerodha.com/">Support portal</a>
+  <br />
 
-            <Link to="/support">Contact</Link>
-            <br />
+  <a href="https://zerodha.com/z-connect/">Z-Connect blog</a>
+  <br />
 
-            <a href="">Support portal</a>
-            <br />
+  <a href="https://zerodha.com/charges/">List of charges</a>
+  <br />
 
-            <a href="">Z-Connect blog</a>
-            <br />
+  <a href="https://zerodha.com/resources/">Downloads &amp; resources</a>
+  <br />
+</div>
 
-            <a href="">List of charges</a>
-            <br />
+{/* Account */}
+<div className="col">
+  <p>Account</p>
 
-            <a href="">Downloads & resources</a>
-            <br />
-          </div>
+  <Link to="/signup">Open an account</Link>
+  <br />
 
-          {/* Account */}
-          <div className="col">
-            <p>Account</p>
+  <a href="https://support.zerodha.com/">Fund transfer</a>
+  <br />
 
-            <Link to="/signup">Open an account</Link>
-            <br />
-
-            <a href="">Fund transfer</a>
-            <br />
-
-            <a href="">60 day challenge</a>
-            <br />
-          </div>
+  <a href="https://zerodha.com/">60 day challenge</a>
+  <br />
+</div>
         </div>
 
         {/* Disclaimer / Information */}

@@ -31,9 +31,31 @@ function Team() {
           </p>
           <p>Playing basketball is his zen.</p>
           <p>
-            Connect on <a href="">Homepage</a> / <a href="">TradingQnA</a> /{" "}
-            <a href="">Twitter</a>
-          </p>
+  Connect on{" "}
+  <a
+    href="https://zerodha.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Homepage
+  </a>{" "}
+  /{" "}
+  <a
+    href="https://tradingqna.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    TradingQnA
+  </a>{" "}
+  /{" "}
+  <a
+    href="https://x.com/zerodha"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Twitter
+  </a>
+</p>
         </div>
       </div>
     </div>
