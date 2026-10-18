@@ -38,3 +38,12 @@ code {
   border-radius: 10px;
   border: none;
 }
+#supportHero .link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #387ed1;
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+}

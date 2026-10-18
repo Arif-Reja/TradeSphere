@@ -7,7 +7,9 @@ function Hero() {
       {/* Header */}
       <div className="p-5" id="supportWrapper">
         <h4>Support Portal</h4>
-        <a href="">Track Tickets</a>
+        <button type="button" className="link-button">
+  Track Tickets
+</button>
       </div>
 
       {/* Main Content */}
@@ -25,10 +27,21 @@ function Hero() {
 
           <br />
 
-          <a href="">Track account opening</a>{" "}
-          <a href="">Track segment activation</a>{" "}
-          <a href="">Intraday margins</a>{" "}
-          <a href="">Kite user manual</a>
+         <button type="button" className="link-button">
+  Track account opening
+</button>{" "}
+
+<button type="button" className="link-button">
+  Track segment activation
+</button>{" "}
+
+<button type="button" className="link-button">
+  Intraday margins
+</button>{" "}
+
+<button type="button" className="link-button">
+  Kite user manual
+</button>
         </div>
 
         {/* Featured */}
@@ -37,15 +50,15 @@ function Hero() {
 
           <ol>
             <li>
-              <a href="">
+              <button type="button" className="link-button">
                 Current Takeovers and Delisting - January 2024
-              </a>
+              </button>
             </li>
 
             <li>
-              <a href="">
+              <button type="button" className="link-button">
                 Latest Intraday leverages - MIS & CO
-              </a>
+              </button>
             </li>
           </ol>
         </div>
