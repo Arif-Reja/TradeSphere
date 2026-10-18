@@ -29,7 +29,11 @@ function Stats() {
           </p>
         </div>
         <div className="col-6 p-5">
-          <img src="media/images/ecosystem.png" style={{ width: "90%" }} />
+          <img
+  src="media/images/ecosystem.png"
+  alt="TradeSphere trading platform ecosystem"
+  style={{ width: "90%" }}
+/>
           <div className="text-center">
 <a
   href="https://zerodha.com/products/"
