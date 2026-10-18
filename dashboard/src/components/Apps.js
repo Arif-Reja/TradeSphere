@@ -14,7 +14,7 @@ const initialStocks = [
 ];
 
 const Apps = () => {
-  const [stocks, setStocks] = useState(initialStocks);
+  const [stocks] = useState(initialStocks);
   const [watchlist, setWatchlist] = useState([
     "RELIANCE",
     "TCS",
@@ -48,9 +48,9 @@ const Apps = () => {
     );
   };
 
-  const totalWatchlist = stocks.filter((stock) =>
+ /* const totalWatchlist = stocks.filter((stock) =>
     watchlist.includes(stock.symbol)
-  );
+  ); */
 
   const gainers = stocks.filter((stock) => stock.change > 0).length;
   const losers = stocks.filter((stock) => stock.change < 0).length;
